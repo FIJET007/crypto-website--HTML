@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.Header .logo{
+    font-size: 1.7em;
+    color: rgb(230, 215, 13);
+    text-decoration: none;
+}
+
+.nav a {
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(230, 215, 13);;
+    text-decoration: none;
+    margin-left: 40px;
+
+}
+
+.nav a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: rgb(230, 215, 13);;
+    border-radius: 5px;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.nav a:hover::after{
+    transform: scale(1);
+
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(SL_0212121_40670_20.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 80px 100px 0;
+
+}
+
+.home .wrapper-login{
+    position: absolute;
+    width: 440px;
+    left: 75%;
+}
+
+.wrapper-login h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.wrapper-login .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 40px 0;
+
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 40px;
+    display: flex;
+    text-align: center;
+
+}
+
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: white;
+    pointer-events: none;
+}
+
+.input-box .icon{
+    position: absolute;
+    top: 18%;
+    left: 16px;
+    font-size: 1.6em;
+    color: white;
+}
+
+.wrapper-login .remember-forgot{
+    font-size: .9em;
+    color: white;
+    font-weight: 500;
+    margin: -25px 0 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.remember-forgot label input{
+    accent-color: black;
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.wrapper-login .btn{
+    width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    background: linear-gradient(90deg, black, gold);
+    box-shadow: 0 8px 10px black;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+}
